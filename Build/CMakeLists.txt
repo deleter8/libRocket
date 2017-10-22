@@ -23,7 +23,7 @@ if(APPLE)
 
 		else(IOS)
 			# set the architectures for OS X
-			set (OSXI_ARCH i386 x86_64)
+			set (OSXI_ARCH x86_64)
 			set (CMAKE_OSX_ARCHITECTURES ${OSXI_ARCH} CACHE string  "Build architecture for OS X universal binaries")		
 		endif(IOS)
 	endif (NOT CMAKE_OSX_ARCHITECTURES AND BUILD_UNIVERSAL_BINARIES)
