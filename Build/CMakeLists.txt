@@ -3,6 +3,9 @@
 #===================================
 
 if(APPLE)
+
+        INCLUDE_DIRECTORIES(/usr/local/include)
+        LINK_DIRECTORIES(/usr/local/lib)
 	# This has to be before most other options so CMake properly handles the 
 	# compiler variables, it MUST bebefore the project() definition
 	if(IOS_PLATFORM)
